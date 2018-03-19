@@ -35,7 +35,7 @@ namespace EsayAnimation {
 
         public override void Rese()
         {
-            transform.localPosition = initPostion;
+
         }
     }
 }
