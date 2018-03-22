@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -127,7 +127,7 @@ namespace EsayAnimation {
                 PrimitiveOperation_UpDate(0);
                 while (PrimitiveOperation_UpDate(animationNowTime / animationTime)) {
                     yield return 0;
-                    animationNowTime += 0.02f * playSpeed;
+                    animationNowTime += Time.deltaTime * playSpeed;
                     if (isBack && gameObject.activeSelf)
                     {
                         if (playSpeed > 0)
