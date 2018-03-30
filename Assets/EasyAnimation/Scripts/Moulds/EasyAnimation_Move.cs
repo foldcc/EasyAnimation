@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EsayAnimation {
+namespace EasyAnimation {
 
     [AddComponentMenu("EasyAnimation/UI效果/移动效果")]
-    public class EasyAnimation_Move : EsayAnimationTemplateMethod
+    public class EasyAnimation_Move : EasyAnimationTemplateMethod
     {
         [Header("移动目标")]
         public Vector3 vector_To;

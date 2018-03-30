@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-namespace EsayAnimation
+namespace EasyAnimation
 {
     [AddComponentMenu("EasyAnimation/UI效果/缩放效果")]
-    public class EasyAnimation_Zoom : EsayAnimationTemplateMethod
+    public class EasyAnimation_Zoom : EasyAnimationTemplateMethod
     {
 
         RectTransform rectTransform;

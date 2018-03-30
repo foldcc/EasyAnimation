@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace EsayAnimation {
+namespace EasyAnimation {
 
     public enum PlayActionType {
         On_Start,
@@ -15,7 +15,7 @@ namespace EsayAnimation {
     /// <summary>
     /// 动画播放模板
     /// </summary>
-    abstract public class EsayAnimationTemplateMethod : MonoBehaviour
+    abstract public class EasyAnimationTemplateMethod : MonoBehaviour
     {
         [Header("自动播放")]
         public bool isAutoPlay = false;
@@ -75,7 +75,6 @@ namespace EsayAnimation {
                 StopCoroutine(animationDrive());
                 play_end();
             }
-            Rese();
         }
 
         /// <summary>

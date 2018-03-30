@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EsayAnimation
+namespace EasyAnimation
 {
     [AddComponentMenu("EasyAnimation/GameObject效果/Scale效果")]
-    public class EasyAnimation_Enlarge_Object : EsayAnimationTemplateMethod
+    public class EasyAnimation_Enlarge_Object : EasyAnimationTemplateMethod
     {
         [Header("初始大小")]
         public Vector3 fromScale = Vector3.zero;

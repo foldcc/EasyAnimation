@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EsayAnimation {
+namespace EasyAnimation {
 
     public enum EaseActionMethod
     {

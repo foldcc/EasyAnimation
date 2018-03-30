@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace EsayAnimation
+namespace EasyAnimation
 {
     [AddComponentMenu("EasyAnimation/UI效果/淡化效果")]
-    public class EasyAnimation_Fade : EsayAnimationTemplateMethod
+    public class EasyAnimation_Fade : EasyAnimationTemplateMethod
     {
         [Header("起始透明度"), Range(0, 1)]
         public float startAlpha;

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-namespace EsayAnimation {
+namespace EasyAnimation {
 
     [AddComponentMenu("EasyAnimation/UI效果/放大效果")]
-    public class EasyAnimation_Enlarge : EsayAnimationTemplateMethod
+    public class EasyAnimation_Enlarge : EasyAnimationTemplateMethod
     {
 
         RectTransform rectTransform;
