@@ -34,8 +34,8 @@ EasyAnimation动画通过缓动函数实现，目前实现了大约提供了十�
   [1]: https://img.shields.io/badge/Unity-5-red.svg
   [2]: https://img.shields.io/badge/Unity-2017-blue.svg
   [3]: https://img.shields.io/badge/Unity-2018-green.svg
-  [4]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1001.gif?x-oss-process=style/Foldcc
-  [5]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1002.gif?x-oss-process=style/Foldcc
-  [6]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1003.gif?x-oss-process=style/Foldcc
-  [7]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1004.gif?x-oss-process=style/Foldcc
-  [8]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1005.gif?x-oss-process=style/Foldcc
+  [4]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1001.gif
+  [5]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1002.gif
+  [6]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1003.gif
+  [7]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1004.gif
+  [8]: https://fold.oss-cn-shanghai.aliyuncs.com/Geeit/EasyAnimation/1005.gif
