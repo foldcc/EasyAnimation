@@ -11,9 +11,6 @@ namespace EasyAnimation {
         [Header("移动目标")]
         public Vector3 vector_To;
 
-        [Header("反向")]
-        public bool isInversion;
-
         private Vector3 nowPos;
 
         protected override void PrimitiveOperation_Start()
@@ -25,10 +22,6 @@ namespace EasyAnimation {
         protected override bool PrimitiveOperation_UpDate(float time)
         {
             float i = ead.getProgress(time);
-            if (isInversion)
-            {
-                i = 1 - i;
-            }
             transform.localPosition = vector_To*i + nowPos;
             return true;
         }
