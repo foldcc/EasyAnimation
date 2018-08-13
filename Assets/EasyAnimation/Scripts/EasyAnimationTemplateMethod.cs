@@ -20,6 +20,9 @@ namespace EasyAnimation {
         [Header("自动播放")]
         public bool isAutoPlay = false;
 
+        [Header("反向播放")]
+        public bool isReverse = false;
+
         [Header("往返播放")]
         public bool isBack = false;
 
@@ -66,7 +69,7 @@ namespace EasyAnimation {
             }
             if (isAutoPlay)
             {
-                Play();
+                rPlay();
             }
         }
 
@@ -124,7 +127,7 @@ namespace EasyAnimation {
                 animationNowTime = 0;
                 playSpeed = 1;
                 PrimitiveOperation_UpDate(0);
-                while (PrimitiveOperation_UpDate(animationNowTime / animationTime)) {
+                while (PrimitiveOperation_UpDate(getPlayValue(animationNowTime / animationTime))) {
                     yield return 0;
                     animationNowTime += Time.deltaTime * playSpeed;
                     if (isBack && gameObject.activeSelf)
@@ -145,7 +148,6 @@ namespace EasyAnimation {
                                 break;
                             }
                         }
-
                     }
                     else
                     {
@@ -160,12 +162,20 @@ namespace EasyAnimation {
                         break;
                     }
                 }
-
-
                 yield return 0;
             } while (isLoop);
             play_end();
             yield return 0;
+        }
+
+        private float getPlayValue(float value , float max = 1) {
+            if (isReverse)
+            {
+                return max - value;
+            }
+            else {
+                return value;
+            }
         }
 
         /// <summary>
@@ -194,12 +204,12 @@ namespace EasyAnimation {
         {
             if (isBack)
             {
-                animationNowTime = 0;
-                PrimitiveOperation_UpDate(0);
+                animationNowTime = getPlayValue(0 , animationTime);
+                PrimitiveOperation_UpDate(getPlayValue(0));
             }
             else {
-                animationNowTime = animationTime;
-                PrimitiveOperation_UpDate(1);
+                animationNowTime = getPlayValue(animationTime , animationTime);
+                PrimitiveOperation_UpDate(getPlayValue(1));
             }
             isPlaying = false;
             if(end_Actions != null)

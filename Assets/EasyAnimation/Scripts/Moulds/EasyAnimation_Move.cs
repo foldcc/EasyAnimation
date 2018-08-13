@@ -32,10 +32,5 @@ namespace EasyAnimation {
             transform.localPosition = vector_To*i + nowPos;
             return true;
         }
-
-        public override void Rese()
-        {
-
-        }
     }
 }
