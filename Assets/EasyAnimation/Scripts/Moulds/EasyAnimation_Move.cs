@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace EasyAnimation {
 
-    [AddComponentMenu("EasyAnimation/UI效果/移动效果")]
+    [AddComponentMenu("EasyAnimation/移动效果")]
     public class EasyAnimation_Move : EasyAnimationTemplateMethod
     {
         [Header("移动目标")]
