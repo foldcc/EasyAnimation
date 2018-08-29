@@ -123,6 +123,7 @@ namespace EasyAnimation {
         private IEnumerator animationDrive() {
             do
             {
+                Rese();
                 PrimitiveOperation_Start();
                 animationNowTime = 0;
                 playSpeed = 1;
