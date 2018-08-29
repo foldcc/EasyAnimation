@@ -4,6 +4,8 @@
 
 ---
 
+[下载插件](https://gitee.com/Foldcc/EasyAnimation/releases)
+
 ## 简介
 
 EasyAnimation是一套简单并适用于UI系统的动画控制工具，满足大部分UI的动画效果，最大的优势在于创建动画轻便易上手，可灵活控制支持多效果复合。
