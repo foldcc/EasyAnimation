@@ -29,7 +29,18 @@ namespace EasyAnimation
             overVector = Vector3.one * overNum;
         }
 
-
+        public EaseAinmationDrive(float maxTime, Vector3 startPos, Vector3 overPos, EaseActionMethod easeType)
+        {
+            this.maxTime = maxTime;
+            this.easeType = easeType;
+            startVector = startPos;
+            overVector = overPos;
+        }
+        /// <summary>
+        /// 返回一个[0-1]的进度
+        /// </summary>
+        /// <param name="time">[0-maxTime]的值</param>
+        /// <returns></returns>
         public float getProgress(float time) {
             if (time < 0)
                 time = 0;
@@ -39,6 +50,11 @@ namespace EasyAnimation
             return EaseAction.GetEaseAction(easeType, time / maxTime * (overNum - startNum) + startNum);
         }
 
+        /// <summary>
+        /// 返回由3个进度值组成的Vector进度值
+        /// </summary>
+        /// <param name="time">[0-maxTime]的值</param>
+        /// <returns></returns>
         public Vector3 getProgressForVector3(float time) {
             if (time < 0)
                 time = 0;
@@ -48,6 +64,21 @@ namespace EasyAnimation
                 EaseAction.GetEaseAction(easeType, time / maxTime * (overVector.x - startVector.x) + startVector.x) , 
                 EaseAction.GetEaseAction(easeType, time / maxTime * (overVector.y - startVector.y) + startVector.y) , 
                 EaseAction.GetEaseAction(easeType, time / maxTime * (overVector.z - startVector.z)) + startVector.z);
+        }
+
+        /// <summary>
+        /// 返回当前进度下对应的一个Vector数值而非进度值
+        /// </summary>
+        /// <param name="time">[0-maxTime]的值</param>
+        /// <returns></returns>
+        public Vector3 GetValueForVector3(float time)
+        {
+            if (time < 0)
+                time = 0;
+            else if (time > maxTime)
+                time = maxTime;
+            float offset = EaseAction.GetEaseAction(easeType, time / maxTime);
+            return (startVector + (overVector - startVector) * offset);
         }
     }
 }
