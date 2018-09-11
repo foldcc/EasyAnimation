@@ -26,5 +26,10 @@ namespace EasyAnimation {
             rectTransform.localScale = rectSize * ead.getProgress(time) ;
             return true;
         }
+
+        public override void Rese()
+        {
+            rectTransform.localScale = initScale;
+        }
     }
 }
