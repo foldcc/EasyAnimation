@@ -8,7 +8,7 @@ namespace EasyAnimation {
     [AddComponentMenu("EasyAnimation/移动效果")]
     public class EasyAnimation_Move : EasyAnimationTemplateMethod
     {
-        [Header("移动目标")]
+        [Header("移动增量")]
         public Vector3 vector_To;
 
         private Vector3 nowPos;
