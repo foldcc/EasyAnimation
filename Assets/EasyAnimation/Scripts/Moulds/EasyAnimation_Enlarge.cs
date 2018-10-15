@@ -6,14 +6,11 @@ namespace EasyAnimation {
     public class EasyAnimation_Enlarge : EasyAnimationTemplateMethod
     {
 
-        RectTransform rectTransform;
-
         Vector3 rectSize = Vector3.one;
 
         protected override void Easy_Animation_Awake()
         {
-            rectTransform = transform as RectTransform;
-            rectSize = rectTransform.localScale;
+            rectSize = transform.localScale;
         }
 
         protected override void PrimitiveOperation_Start()
@@ -23,13 +20,13 @@ namespace EasyAnimation {
 
         protected override bool PrimitiveOperation_UpDate(float time)
         {
-            rectTransform.localScale = rectSize * ead.getProgress(time) ;
+            transform.localScale = rectSize * ead.getProgress(time) ;
             return true;
         }
 
         public override void Rese()
         {
-            rectTransform.localScale = initScale;
+            transform.localScale = initScale;
         }
     }
 }
