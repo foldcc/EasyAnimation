@@ -259,9 +259,9 @@ namespace EasyAnimation {
         }
 
         /// <summary>
-        /// 初始化本地事件
+        /// 刷新原始的重置位置信息
         /// </summary>
-        private void initAction() {
+        public void initAction() {
             initPostion = transform.localPosition;
             initRotation = transform.localRotation;
             initScale = transform.localScale;
