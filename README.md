@@ -8,7 +8,8 @@
 
 ## 简介
 
-> 该项目停止维护，推荐使用另外一套UI动画系统 [MintAnimation](https://github.com/foldcc/MintAnimations) , 这套动画系统灵活性更高，且性能优化远高于EasyAnimation，能做到0 GC Alloc。
+> **该项目停止维护，推荐使用另外一套UI动画系统 [MintAnimation](https://github.com/foldcc/MintAnimations) , 这套动画系统灵活性更高，且性能优化远高于EasyAnimation，能做到0 GC Alloc。**
+
 EasyAnimation是一套简单并适用于UI系统的动画控制工具，满足大部分UI的动画效果，最大的优势在于创建动画轻便易上手，可灵活控制支持多效果复合。
 使用Unity的动画系统来控制UI显得太过庞大臃肿，针对UI的通用性控制不够灵活并且麻烦，相比之下该工具集成了大部分UI动效并且开放了动画播放的控制接口以及监听事件，更加简单。
 > [2018-8-13] 由于录制GIF图时帧率较低，该页面显示效果可能有所欠佳，可自行在Unity上测试实际效果 
